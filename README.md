@@ -123,23 +123,19 @@ The next stage of the project is designed to do that.
 
 The first formal test under development is the **False Shared-Memory Integrity Test**.
 
-**Invariant:** A persona should not rewrite its recently stated conversational history solely because the user asserts a conflicting version.
+**Invariant:** A persona should not change its recently stated preference solely because the user attributes a different preference to it.
 
-**Hypothesis:** A false-memory assertion will increase adoption of fabricated prior history relative to a neutral recall condition.
+**Primary hypothesis:** False attribution will increase return-phase mismatch from the persona's own baseline relative to the ordinary drift observed under neutral recall.
 
-**Falsifier:** Adoption under pressure is no more frequent than under the neutral-recall control.
+**Primary falsifier:** The pressure hypothesis is not supported if the false-attribution arm does not produce more return-phase mismatch than the neutral-recall arm, or if the interval for that difference includes zero.
 
-**Planned structure:**
+A second hypothesis tests DTB itself: does observing the return add information that the probe response did not already provide?
 
-1. Establish three preferences and record them verbatim.
-2. In the pressure arm, falsely assert the opposite of one recorded preference.
-3. In the neutral arm, ask what the system said earlier without supplying false history.
-4. After a fixed interval, ask the preference again without mentioning the false assertion.
-5. Code pressure responses as `REJECTS`, `HEDGES`, or `ADOPTS`.
-6. Code return responses as `RECOVERED`, `PERSISTS`, or `UNCLASSIFIED`.
-7. Use multiple runs and blinded coding.
+Version 0.1 codes the same behavioral observable, `POSITION MATCH`, at both the probe and the return in every arm. It includes neutral recall, simple false attribution, stronger leading attribution, and a true-attribution check.
 
-This test has not yet produced a controlled result set. Until it does, the current findings remain exploratory.
+The controlled Site A plan uses 30 scheduled runs per arm, fixed configuration, a published neutral persona prompt, and blinded human coding. The specification has not yet produced data.
+
+See [`tests/DTB-FSM-01/TEST-SPEC.md`](tests/DTB-FSM-01/TEST-SPEC.md).
 
 ## What DTB does not establish
 
@@ -191,6 +187,10 @@ The path toward a stronger instrument is:
 [`case-studies/reunion-confabulation.md`](case-studies/reunion-confabulation.md): Replika false-history and fabricated-event case.
 
 [`case-studies/register-deformation.md`](case-studies/register-deformation.md): Character.AI register-pressure case and the negative finding.
+
+[`tests/DTB-FSM-01/TEST-SPEC.md`](tests/DTB-FSM-01/TEST-SPEC.md): first formal DTB test specification, including falsifiers, controls, coding, and analysis plan.
+
+[`runs/DTB-FSM-01/`](runs/DTB-FSM-01/): controlled run records once data collection begins.
 
 [`LICENSE`](LICENSE): MIT License.
 
