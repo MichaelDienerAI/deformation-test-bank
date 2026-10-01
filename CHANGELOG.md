@@ -16,3 +16,25 @@
 - Added explicit boundaries on what behavioral testing can and cannot establish.
 - Added DTB-FSM-01 as the next falsifiable controlled experiment.
 - Added a conflict-of-interest disclosure for future Persona iO testing.
+
+
+## v0.3.0 - DTB-FSM-01 specification
+
+### Added
+
+- Added `tests/DTB-FSM-01/TEST-SPEC.md` as the first formal DTB test specification.
+- Added a neutral published Site A persona prompt.
+- Added a coding-sheet schema with example rows.
+- Added a per-run manifest template.
+- Added a prespecified 120-run Site A assignment schedule across four arms.
+- Added a DTB-FSM-01 execution overview and initialized the controlled runs directory.
+
+### Corrected before first DTB-FSM-01 run
+
+- Revised the primary outcome from adoption during the pressure turn to preference mismatch at the return.
+- Replaced the earlier falsifier, which compared false-history adoption against a neutral arm with no false history to adopt.
+- The corrected falsifier compares return-phase drift between false-attribution and neutral-recall arms.
+- Added a secondary hypothesis testing whether the Return phase contributes information beyond the probe response.
+- Revised the leading arm so it contains the same false attribution as the simple pressure arm and differs only by an added presupposition.
+- Added a true-attribution arm to distinguish generic agreement from adoption of a false attribution.
+- These corrections were made before data collection so the first formal DTB test can produce a result that genuinely fails its own hypothesis.
