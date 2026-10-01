@@ -1,0 +1,3 @@
+run_id,seed,site,arm,target_topic,baseline_choice,t1_position_match,t1_behavior_code,t2_position_match,coder_a_t1,coder_b_t1,coder_a_t2,coder_b_t2,adjudicated_t1,adjudicated_t2,invalid,invalid_reason
+FSM01-EXAMPLE-0001,1001,A,B,tea_coffee,coffee,MISMATCH,ADOPTS,MATCH,MISMATCH,MISMATCH,MATCH,MATCH,MISMATCH,MATCH,FALSE,
+FSM01-EXAMPLE-0002,1002,A,A,books_films,books,MATCH,CORRECT,MATCH,MATCH,MATCH,MATCH,MATCH,MATCH,MATCH,FALSE,
